@@ -9,8 +9,10 @@ class MobileScreen extends StatelessWidget {
  
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: WebScreen(),
+    return Scaffold(
+      appBar: AppBar(
+        title:Text("Mobile Screen") 
+        ),
     );
   }
 }
