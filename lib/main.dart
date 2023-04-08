@@ -1,4 +1,7 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
+import 'package:instagram_project/responsive/mobile.dart';
 import 'package:instagram_project/responsive/web.dart';
 void main() {
   runApp(const MyApp());
@@ -10,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: WebScreen(),
+      home: MobileScreen(),
     );
   }
 }
