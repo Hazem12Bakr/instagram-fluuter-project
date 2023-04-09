@@ -13,7 +13,11 @@ class MobileScreen extends StatelessWidget {
         title: Text("Mobile Screen"),
       ),
 
-      bottomNavigationBar: CupertinoTabBar(items: [
+      bottomNavigationBar: CupertinoTabBar(
+        backgroundColor: Colors.greenAccent,
+        
+        
+        items: [
         BottomNavigationBarItem(icon: Icon(Icons.home),label: ""),
         BottomNavigationBarItem(icon: Icon(Icons.search),label: ""),
       ]),
