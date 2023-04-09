@@ -12,7 +12,7 @@ class MobileScreen extends StatelessWidget {
         title: Text("Mobile Screen"),
       ),
 
-      bottomNavigationBar: BottomNavigationBar(items: [],),
+     // bottomNavigationBar: BottomNavigationBar(items: [],),
 
     );
   }

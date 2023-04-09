@@ -1,4 +1,4 @@
-// ignore_for_file: unused_import, prefer_const_constructors
+// ignore_for_file: unused_import
 
 import 'package:flutter/material.dart';
 import 'package:instagram_project/responsive/mobile.dart';
@@ -14,9 +14,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(brightness: Brightness.dark),
+     // theme: ThemeData.dark(),
       home: Responsive(
         mymobilescreen: MobileScreen(),
         mywebscreen: WebScreen(),
