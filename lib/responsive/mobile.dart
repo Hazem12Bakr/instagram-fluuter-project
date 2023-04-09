@@ -16,7 +16,7 @@ class MobileScreen extends StatelessWidget {
 
       bottomNavigationBar: CupertinoTabBar(
         backgroundColor: mobileBackgroundColor,
-        
+        onTap: (index){},
         
         items: [
         BottomNavigationBarItem(icon: Icon(Icons.home,color: primaryColor,),label: ""),
@@ -24,6 +24,8 @@ class MobileScreen extends StatelessWidget {
         BottomNavigationBarItem(icon: Icon(Icons.add_circle,color: secondaryColor,),label: ""),
         BottomNavigationBarItem(icon: Icon(Icons.favorite,color: secondaryColor,),label: ""),
         BottomNavigationBarItem(icon: Icon(Icons.person,color: secondaryColor,),label: ""),
+
+
       ]),
 
     );
