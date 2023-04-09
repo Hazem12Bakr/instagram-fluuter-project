@@ -14,7 +14,7 @@ class _AddPostState extends State<AddPost> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("AddPost"),
+        title: Text("AddPost screen"),
       ),
     );
   }
