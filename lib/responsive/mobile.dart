@@ -54,8 +54,8 @@ class MobileScreen extends StatelessWidget {
           ]),
     
     body: PageView(
-      onPageChanged: (value) {},
-      physics: NeverScrollableScrollPhysics(),
+     // onPageChanged: (value) {},
+      // physics: NeverScrollableScrollPhysics(),
      // controller: _PageController,
       children: [
         Home(),
