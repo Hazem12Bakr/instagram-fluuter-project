@@ -2,6 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:instagram_project/shared/colors.dart';
 
 class MobileScreen extends StatelessWidget {
   const MobileScreen({super.key});
@@ -14,12 +15,12 @@ class MobileScreen extends StatelessWidget {
       ),
 
       bottomNavigationBar: CupertinoTabBar(
-        backgroundColor: Colors.greenAccent,
+        backgroundColor: mobileBackgroundColor,
         
         
         items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home),label: ""),
-        BottomNavigationBarItem(icon: Icon(Icons.search),label: ""),
+        BottomNavigationBarItem(icon: Icon(Icons.home,color: primaryColor,),label: ""),
+        BottomNavigationBarItem(icon: Icon(Icons.search,color: secondaryColor,),label: ""),
       ]),
 
     );
