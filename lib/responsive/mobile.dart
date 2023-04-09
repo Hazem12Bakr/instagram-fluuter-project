@@ -11,6 +11,9 @@ class MobileScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text("Mobile Screen"),
       ),
+
+      bottomNavigationBar: BottomNavigationBar(items: [],),
+
     );
   }
 }
