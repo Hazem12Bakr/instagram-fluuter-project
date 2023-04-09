@@ -55,12 +55,13 @@ class MobileScreen extends StatelessWidget {
     
     body: PageView(
      // onPageChanged: (value) {},
-      // physics: NeverScrollableScrollPhysics(),
+       physics: NeverScrollableScrollPhysics(),
      // controller: _PageController,
       children: [
         Home(),
         Search(),
         AddPost(),
+        Center(child: Text("salm alykom")),
         Profile(),
         
       ],
