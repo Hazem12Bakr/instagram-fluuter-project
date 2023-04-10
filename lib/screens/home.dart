@@ -39,30 +39,34 @@ class _HomeState extends State<Home> {
       ),
       body: Column(
         children: [
-          Row(
-            children: [
-              Row(
-                children: [
-                  CircleAvatar(
-                radius: 26,
-                backgroundImage: NetworkImage(
-                  "https://picsum.photos/250?image=9",
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 16,horizontal: 13),
+            child: Row( 
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    CircleAvatar(
+                  radius: 26,
+                  backgroundImage: NetworkImage(
+                    "https://picsum.photos/250?image=9",
+                  ),
                 ),
-              ),
-              SizedBox(
-                width: 17,
-              ),
-              Text(
-                "hazem a.bakr",
-                style: TextStyle(fontSize: 15),
-              ),
-              
-                ],
-              ),
-              
-              
-              IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
-            ],
+                SizedBox(
+                  width: 17,
+                ),
+                Text(
+                  "hazem a.bakr",
+                  style: TextStyle(fontSize: 15),
+                ),
+                
+                  ],
+                ),
+                
+                
+                IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
+              ],
+            ),
           ),
         ],
       ),
