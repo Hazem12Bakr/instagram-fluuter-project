@@ -37,32 +37,28 @@ class _HomeState extends State<Home> {
           width: 10,
         ),
       ),
-    
-    body:Column(
-      children: [
-        Row(
-          children: [
-            CircleAvatar(
-              radius: 26,
-              backgroundImage: NetworkImage(
-                "https://picsum.photos/250?image=9",
+      body: Column(
+        children: [
+          Row(
+            children: [
+              CircleAvatar(
+                radius: 26,
+                backgroundImage: NetworkImage(
+                  "https://picsum.photos/250?image=9",
+                ),
               ),
-            ),
-
-            SizedBox(
-              width: 17,
-            ),
-
-            Text(
-              "hazem a.bakr",
-              style: TextStyle(fontSize: 15),
-            )
-
-          ],
-        ),
-      ],
-    ) ,
-    
+              SizedBox(
+                width: 17,
+              ),
+              Text(
+                "hazem a.bakr",
+                style: TextStyle(fontSize: 15),
+              ),
+              IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
