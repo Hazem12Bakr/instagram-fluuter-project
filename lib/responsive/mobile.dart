@@ -17,6 +17,7 @@ class MobileScreen extends StatefulWidget {
 
 class _MobileScreenState extends State<MobileScreen> {
   final PageController _pageController = PageController();
+  int currentPage = 0;
 
   @override
   void dispose() {
@@ -34,13 +35,16 @@ class _MobileScreenState extends State<MobileScreen> {
           onTap: (index) {
             // navigate to the tabed page
             _pageController.jumpToPage(index);
+            setState(() {
+              currentPage = index;
+            });
            // print("==========  $index ");
           },
           items: [
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home,
-                  color: primaryColor,
+                  color: currentPage==0? primaryColor:secondaryColor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
