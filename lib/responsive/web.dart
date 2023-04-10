@@ -47,6 +47,7 @@ class WebScreen extends StatelessWidget {
             ),
             onPressed: () {},
           ),
+        
         ],
         backgroundColor: mobileBackgroundColor,
         title: SvgPicture.asset(
@@ -55,6 +56,9 @@ class WebScreen extends StatelessWidget {
           height: 32,
         ),
       ),
+   
+   
+   
     );
   }
 }
