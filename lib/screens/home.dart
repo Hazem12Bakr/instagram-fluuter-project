@@ -75,7 +75,7 @@ class _HomeState extends State<Home> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 14),
+            padding: const EdgeInsets.symmetric(vertical: 11),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -117,7 +117,30 @@ class _HomeState extends State<Home> {
             style: TextStyle(
               fontSize: 16,
             ),
-          ))
+          )),
+
+         Row(
+          children: [
+            Text(
+              "USERNAME",
+              textAlign: TextAlign.start,
+              style: TextStyle(
+                fontSize: 17,
+                color: Color.fromARGB(255,189,196,199),
+              ),
+              ),
+
+              Text(
+                "Cairo City Egypt",
+                textAlign: TextAlign.start,
+                style: TextStyle(
+                  fontSize: 15,
+                  color: Color.fromARGB(255, 189, 196, 199), 
+                ),
+                ),
+          ],
+         )
+
         ],
       ),
     );
