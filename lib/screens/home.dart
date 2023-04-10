@@ -50,10 +50,10 @@ class _HomeState extends State<Home> {
                       padding: EdgeInsets.all(3),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: Color.fromARGB(125, 78, 91, 110),
+                        color: Color.fromARGB(125, 78, 91, 110)
                       ),
                       child: CircleAvatar(
-                        radius: 33,
+                        radius: 26,
                         backgroundImage: NetworkImage(
                           "https://picsum.photos/250?image=9",
                         ),
