@@ -42,9 +42,9 @@ class _HomeState extends State<Home> {
         
         decoration: BoxDecoration(
           color: mobileBackgroundColor,
-          borderRadius: BorderRadius.circular(12),
-        ),
-        margin: EdgeInsets.symmetric(vertical: 16,horizontal: 100),
+          borderRadius: BorderRadius.circular(12)),
+
+        margin: EdgeInsets.symmetric(vertical: 11,horizontal: widthScreen>600? 100:0),
         child: Column(
           children: [
             Padding(
