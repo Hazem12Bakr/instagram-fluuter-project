@@ -121,20 +121,23 @@ class _HomeState extends State<Home> {
 
          Row(
           children: [
+            SizedBox(
+              width: 9,
+            ),
             Text(
               "USERNAME",
               textAlign: TextAlign.start,
               style: TextStyle(
-                fontSize: 17,
+                fontSize: 20,
                 color: Color.fromARGB(255,189,196,199),
               ),
               ),
 
               Text(
-                "Cairo City Egypt",
+                "Cairo City Egypt ",
                 textAlign: TextAlign.start,
                 style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 18,
                   color: Color.fromARGB(255, 189, 196, 199), 
                 ),
                 ),
