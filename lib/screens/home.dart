@@ -78,39 +78,42 @@ class _HomeState extends State<Home> {
             width: double.infinity,
            ),
          ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Row(
-              children: [
-                IconButton(
-              onPressed: (){},
-               icon: Icon(Icons.favorite_border),
-               ),
-
-            IconButton(
-              onPressed: (){},
-               icon: Icon(
-                Icons.comment_outlined,
-               ),
-               ),
-            IconButton(
-              onPressed: (){},
-               icon: Icon(
-                Icons.send,
-               ),
-               ),
-              ],
-            ),
-            IconButton(
-              onPressed: (){},
-               icon: Icon(
-                Icons.bookmark_outline,
-               ),
-               ),
-
-
-          ],
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical:14 ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(
+                children: [
+                  IconButton(
+                onPressed: (){},
+                 icon: Icon(Icons.favorite_border),
+                 ),
+        
+              IconButton(
+                onPressed: (){},
+                 icon: Icon(
+                  Icons.comment_outlined,
+                 ),
+                 ),
+              IconButton(
+                onPressed: (){},
+                 icon: Icon(
+                  Icons.send,
+                 ),
+                 ),
+                ],
+              ),
+              IconButton(
+                onPressed: (){},
+                 icon: Icon(
+                  Icons.bookmark_outline,
+                 ),
+                 ),
+        
+        
+            ],
+          ),
         )
 
        
