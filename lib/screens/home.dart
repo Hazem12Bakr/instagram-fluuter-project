@@ -79,8 +79,11 @@ class _HomeState extends State<Home> {
            ),
          ),
         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            IconButton(
+            Row(
+              children: [
+                IconButton(
               onPressed: (){},
                icon: Icon(Icons.favorite_border),
                ),
@@ -97,6 +100,8 @@ class _HomeState extends State<Home> {
                 Icons.send,
                ),
                ),
+              ],
+            ),
             IconButton(
               onPressed: (){},
                icon: Icon(
