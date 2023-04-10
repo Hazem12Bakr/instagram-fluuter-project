@@ -115,7 +115,8 @@ class _HomeState extends State<Home> {
                 "10 Likes",
                 textAlign: TextAlign.start,
                 style: TextStyle(
-                  fontSize: 16,
+                  color: Color.fromARGB(214, 157, 157, 165),
+                  fontSize: 18,
                 ),
               )),
           Row(
@@ -124,7 +125,7 @@ class _HomeState extends State<Home> {
                 width: 9,
               ),
               Text(
-                "USERNAME",
+                "USERNAME ",
                 textAlign: TextAlign.start,
                 style: TextStyle(
                   fontSize: 20,
@@ -132,7 +133,7 @@ class _HomeState extends State<Home> {
                 ),
               ),
               Text(
-                "Cairo City Egypt ",
+                " Cairo City Egypt ",
                 textAlign: TextAlign.start,
                 style: TextStyle(
                   fontSize: 18,
@@ -141,18 +142,38 @@ class _HomeState extends State<Home> {
               ),
             ],
           ),
-          Container(
-              margin: EdgeInsets.fromLTRB(10, 0, 0, 10),
-              width: double.infinity,
-              child: Text("view all 100 comments",
-              style: TextStyle(
-                fontSize: 16,
-              ),
-              textAlign: TextAlign.start,
-
-              ),
+          GestureDetector(
+            onTap: () {
               
-              ),
+            },
+            child: Container(
+                margin: EdgeInsets.fromLTRB(10, 13, 9, 10),
+                width: double.infinity,
+                child: Text("view all 100 comments",
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Color.fromARGB(255, 63, 17, 227),
+                ),
+                textAlign: TextAlign.start,
+          
+                ),
+                
+                ),
+          ),
+        Container(
+                margin: EdgeInsets.fromLTRB(10, 0, 9, 10),
+                width: double.infinity,
+                child: Text(
+                  "3 Julay 2023",
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Color.fromARGB(214, 157, 157, 165),
+                ),
+                textAlign: TextAlign.start,
+          
+                )),
+        
+       
         ],
       ),
     );
