@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, deprecated_member_use, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, deprecated_member_use, prefer_const_literals_to_create_immutables, unused_field
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -8,8 +8,22 @@ import 'package:instagram_project/screens/profile.dart';
 import 'package:instagram_project/screens/search.dart';
 import 'package:instagram_project/shared/colors.dart';
 
-class WebScreen extends StatelessWidget {
+class WebScreen extends StatefulWidget {
   const WebScreen({super.key});
+
+  @override
+  State<WebScreen> createState() => _WebScreenState();
+}
+
+class _WebScreenState extends State<WebScreen> {
+  final PageController _pageController = PageController();
+  int page = 0;
+
+navigate2Screen(int indexx)
+{
+  _pageController.jumpToPage(indexx);
+}
+
 
   @override
   Widget build(BuildContext context) {
@@ -19,37 +33,59 @@ class WebScreen extends StatelessWidget {
           IconButton(
             icon: Icon(
               Icons.home,
-              color: primaryColor,
+              color:page==0? primaryColor:secondaryColor,
             ),
-            onPressed: () {},
+            onPressed: () {
+              navigate2Screen(0);
+              setState(() {
+                
+              });
+            },
           ),
           IconButton(
             icon: Icon(
               Icons.search,
-              color: secondaryColor,
+              color:page==0? primaryColor:secondaryColor,
             ),
-            onPressed: () {},
+            onPressed: () {
+              navigate2Screen(1);
+              setState(() {
+                
+              });
+            },
           ),
           IconButton(
             icon: Icon(
               Icons.add_a_photo,
-              color: secondaryColor,
+              color:page==1? primaryColor:secondaryColor,
             ),
-            onPressed: () {},
+            onPressed: () {
+              navigate2Screen(2);
+              setState(() {
+                
+              });
+            },
           ),
           IconButton(
             icon: Icon(
               Icons.favorite,
-              color: secondaryColor,
+              color:page==2? primaryColor:secondaryColor,
             ),
-            onPressed: () {},
+            onPressed: () {
+              navigate2Screen(3);
+              setState(() {
+                
+              });
+            },
           ),
           IconButton(
             icon: Icon(
               Icons.person,
-              color: secondaryColor,
+              color:page==3? primaryColor:secondaryColor,
             ),
-            onPressed: () {},
+            onPressed: () {
+              navigate2Screen(4);
+            },
           ),
         
         ],
@@ -62,6 +98,7 @@ class WebScreen extends StatelessWidget {
       ),
    
     body: PageView(
+      controller: _pageController,
       onPageChanged: (index) {
       
       },
