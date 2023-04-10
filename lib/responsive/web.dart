@@ -38,7 +38,7 @@ navigate2Screen(int indexx)
             onPressed: () {
               navigate2Screen(0);
               setState(() {
-                
+                page==0;
               });
             },
           ),
@@ -50,7 +50,7 @@ navigate2Screen(int indexx)
             onPressed: () {
               navigate2Screen(1);
               setState(() {
-                
+                page==1;
               });
             },
           ),
@@ -62,7 +62,7 @@ navigate2Screen(int indexx)
             onPressed: () {
               navigate2Screen(2);
               setState(() {
-                
+                page==2;
               });
             },
           ),
@@ -74,7 +74,7 @@ navigate2Screen(int indexx)
             onPressed: () {
               navigate2Screen(3);
               setState(() {
-                
+                page==3;
               });
             },
           ),
@@ -85,6 +85,9 @@ navigate2Screen(int indexx)
             ),
             onPressed: () {
               navigate2Screen(4);
+              setState(() {
+                page==3;
+              });
             },
           ),
         
