@@ -16,7 +16,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     final double widthScreen = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor: mobileBackgroundColor,
+      backgroundColor: widthScreen>600? webBackgroundColor : mobileBackgroundColor,
       appBar:widthScreen>600?null: AppBar(
         actions: [
           IconButton(
@@ -39,6 +39,7 @@ class _HomeState extends State<Home> {
         ),
       ),
       body: Container(
+        color: mobileBackgroundColor,
         margin: EdgeInsets.symmetric(vertical: 16,horizontal: 100),
         child: Column(
           children: [
