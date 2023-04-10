@@ -26,7 +26,9 @@ class _MobileScreenState extends State<MobileScreen> {
       bottomNavigationBar: CupertinoTabBar(
           backgroundColor: mobileBackgroundColor,
           onTap: (index) {
-            print("==========  $index ");
+            // navigate to the tabed page
+            _pageController.jumpToPage(index);
+           // print("==========  $index ");
           },
           items: [
             BottomNavigationBarItem(
