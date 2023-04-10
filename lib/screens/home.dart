@@ -109,41 +109,50 @@ class _HomeState extends State<Home> {
             ),
           ),
           Container(
-            margin: EdgeInsets.fromLTRB(10, 0, 0, 10),
-            width: double.infinity,
+              margin: EdgeInsets.fromLTRB(10, 0, 0, 10),
+              width: double.infinity,
               child: Text(
-            "10 Likes",
-            textAlign: TextAlign.start,
-            style: TextStyle(
-              fontSize: 16,
-            ),
-          )),
-
-         Row(
-          children: [
-            SizedBox(
-              width: 9,
-            ),
-            Text(
-              "USERNAME",
-              textAlign: TextAlign.start,
-              style: TextStyle(
-                fontSize: 20,
-                color: Color.fromARGB(255,189,196,199),
+                "10 Likes",
+                textAlign: TextAlign.start,
+                style: TextStyle(
+                  fontSize: 16,
+                ),
+              )),
+          Row(
+            children: [
+              SizedBox(
+                width: 9,
               ),
+              Text(
+                "USERNAME",
+                textAlign: TextAlign.start,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Color.fromARGB(255, 189, 196, 199),
+                ),
               ),
-
               Text(
                 "Cairo City Egypt ",
                 textAlign: TextAlign.start,
                 style: TextStyle(
                   fontSize: 18,
-                  color: Color.fromARGB(255, 189, 196, 199), 
+                  color: Color.fromARGB(255, 189, 196, 199),
                 ),
-                ),
-          ],
-         )
+              ),
+            ],
+          ),
+          Container(
+              margin: EdgeInsets.fromLTRB(10, 0, 0, 10),
+              width: double.infinity,
+              child: Text("view all 100 comments",
+              style: TextStyle(
+                fontSize: 16,
+              ),
+              textAlign: TextAlign.start,
 
+              ),
+              
+              ),
         ],
       ),
     );
