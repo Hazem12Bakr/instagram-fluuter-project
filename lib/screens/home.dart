@@ -68,7 +68,12 @@ class _HomeState extends State<Home> {
               ],
             ),
           ),
-       
+         Image.network(
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR601dYfdAM4YZpz6rWo_Ir1u18y8IsbxAyeEZh4_qEjpJ6ZqEfvLSBgdIfdZApND4dAqk&usqp=CAU",
+          fit: BoxFit.cover,
+          height: MediaQuery.of(context).size.height *0.35,
+          width: double.infinity,
+         ),
         
        
         ],
