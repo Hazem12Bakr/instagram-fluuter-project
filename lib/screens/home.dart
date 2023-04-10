@@ -41,7 +41,9 @@ class _HomeState extends State<Home> {
         children: [
           Row(
             children: [
-              CircleAvatar(
+              Row(
+                children: [
+                  CircleAvatar(
                 radius: 26,
                 backgroundImage: NetworkImage(
                   "https://picsum.photos/250?image=9",
@@ -54,6 +56,11 @@ class _HomeState extends State<Home> {
                 "hazem a.bakr",
                 style: TextStyle(fontSize: 15),
               ),
+              
+                ],
+              ),
+              
+              
               IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
             ],
           ),
