@@ -17,6 +17,18 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: mobileBackgroundColor,
       appBar: AppBar(
+        actions: [
+          IconButton(
+           onPressed: (){},
+           icon: Icon(
+            Icons.messenger_outline,
+           )),
+           IconButton(
+            onPressed: (){},
+            icon: Icon(
+              Icons.logout,
+            )),
+        ],
         backgroundColor: mobileBackgroundColor,
         title: SvgPicture.asset("assets/img/Instagram.svg.svg",color:primaryColor ,height: 40,width: 10,),
       ),
