@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_print
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -8,9 +8,15 @@ import 'package:instagram_project/screens/profile.dart';
 import 'package:instagram_project/screens/search.dart';
 import 'package:instagram_project/shared/colors.dart';
 
-class MobileScreen extends StatelessWidget {
+class MobileScreen extends StatefulWidget {
   const MobileScreen({super.key});
 
+  @override
+  State<MobileScreen> createState() => _MobileScreenState();
+}
+
+class _MobileScreenState extends State<MobileScreen> {
+  final PageController _pageController = PageController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +25,9 @@ class MobileScreen extends StatelessWidget {
       ),
       bottomNavigationBar: CupertinoTabBar(
           backgroundColor: mobileBackgroundColor,
-          onTap: (index) {},
+          onTap: (index) {
+            print("==========  $index ");
+          },
           items: [
             BottomNavigationBarItem(
                 icon: Icon(
@@ -56,7 +64,7 @@ class MobileScreen extends StatelessWidget {
     body: PageView(
      // onPageChanged: (value) {},
        physics: NeverScrollableScrollPhysics(),
-     // controller: _PageController,
+      controller: _pageController,
       children: [
         Home(),
         Search(),
