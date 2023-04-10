@@ -39,7 +39,11 @@ class _HomeState extends State<Home> {
         ),
       ),
       body: Container(
-        color: mobileBackgroundColor,
+        
+        decoration: BoxDecoration(
+          color: mobileBackgroundColor,
+          borderRadius: BorderRadius.circular(12),
+        ),
         margin: EdgeInsets.symmetric(vertical: 16,horizontal: 100),
         child: Column(
           children: [
