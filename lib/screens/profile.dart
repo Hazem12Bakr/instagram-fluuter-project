@@ -25,7 +25,7 @@ class _ProfileState extends State<Profile> {
           Row(
             children: [
               Container(
-                        padding: EdgeInsets.only(left: 22),
+                        padding: EdgeInsets.only(left: 10),
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           color: Color.fromARGB(125, 78, 91, 110)
@@ -36,8 +36,7 @@ class _ProfileState extends State<Profile> {
                             "https://picsum.photos/250?image=9",
                           ),
                         ),
-                      ),
-              
+                      ),           
               Column(
                 children: [
                   Text(
@@ -47,11 +46,9 @@ class _ProfileState extends State<Profile> {
                       fontWeight: FontWeight.bold,
                     ),
                     ),
-
                     SizedBox(
                       height: 5,
                     ),
-
                     Text(
                       "Posts",
                       style: TextStyle(
@@ -61,8 +58,55 @@ class _ProfileState extends State<Profile> {
                     )
 
                 ],
-              )
-           
+              ),
+              SizedBox(
+                     width: 17,
+                    ),
+              Column(
+                children: [
+                  Text(
+                    "50",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      "Followers",
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    )
+
+                ],
+              ),
+              Column(
+                children: [
+                  Text(
+                    "1",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      "Posts",
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    )
+
+                ],
+              ),
+              
             ],
           )
       ]),
