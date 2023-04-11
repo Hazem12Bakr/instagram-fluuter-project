@@ -25,13 +25,13 @@ class _ProfileState extends State<Profile> {
           Row(
             children: [
               Container(
-                        padding: EdgeInsets.all(3),
+                        padding: EdgeInsets.only(left: 22),
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           color: Color.fromARGB(125, 78, 91, 110)
                         ),
                         child: CircleAvatar(
-                          radius: 26,
+                          radius: 40,
                           backgroundImage: NetworkImage(
                             "https://picsum.photos/250?image=9",
                           ),
