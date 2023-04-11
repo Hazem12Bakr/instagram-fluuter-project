@@ -22,6 +22,9 @@ class _WebScreenState extends State<WebScreen> {
 navigate2Screen(int indexx)
 {
   _pageController.jumpToPage(indexx);
+  setState(() {
+     page=indexx;
+  });
 }
 
 
@@ -37,57 +40,47 @@ navigate2Screen(int indexx)
             ),
             onPressed: () {
               navigate2Screen(0);
-              setState(() {
-                page==0;
-              });
+              
             },
           ),
           IconButton(
             icon: Icon(
               Icons.search,
-              color:page==0? primaryColor:secondaryColor,
+              color:page==1? primaryColor:secondaryColor,
             ),
             onPressed: () {
               navigate2Screen(1);
-              setState(() {
-                page==1;
-              });
+              
             },
           ),
           IconButton(
             icon: Icon(
               Icons.add_a_photo,
-              color:page==1? primaryColor:secondaryColor,
+              color:page==2? primaryColor:secondaryColor,
             ),
             onPressed: () {
               navigate2Screen(2);
-              setState(() {
-                page==2;
-              });
+              
             },
           ),
           IconButton(
             icon: Icon(
               Icons.favorite,
-              color:page==2? primaryColor:secondaryColor,
+              color:page==3? primaryColor:secondaryColor,
             ),
             onPressed: () {
               navigate2Screen(3);
-              setState(() {
-                page==3;
-              });
+              
             },
           ),
           IconButton(
             icon: Icon(
               Icons.person,
-              color:page==3? primaryColor:secondaryColor,
+              color:page==4? primaryColor:secondaryColor,
             ),
             onPressed: () {
               navigate2Screen(4);
-              setState(() {
-                page==3;
-              });
+              
             },
           ),
         
