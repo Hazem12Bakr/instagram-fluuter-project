@@ -121,8 +121,23 @@ class _ProfileState extends State<Profile> {
            
            
             ],
-          )
+          ),
+     
+        Container(
+          margin: EdgeInsets.fromLTRB(15, 21, 0, 0),
+          width: double.infinity,
+          child: Text("Programmer")),
+    
+      
+      SizedBox(height: 15,),
+       Divider(
+        color: Colors.white,
+        thickness: 0.44,
+       )
+    
       ]),
+
+     
 
     );
   }
