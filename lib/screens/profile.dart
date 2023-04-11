@@ -37,82 +37,85 @@ class _ProfileState extends State<Profile> {
                           ),
                         ),
                       ),           
-              Row(
-                children: [
-                  Column(
-                children: [
-                  Text(
-                    "1",
-                    style: TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
+              Expanded(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Column(
+                  children: [
                     Text(
-                      "Posts",
+                      "1",
                       style: TextStyle(
-                        fontSize: 15,
+                        fontSize: 22,
                         fontWeight: FontWeight.bold,
                       ),
-                    )
-
-                ],
-              ),
-              SizedBox(
-                     width: 17,
-                    ),
-              Column(
-                children: [
-                  Text(
-                    "50",
-                    style: TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text(
-                      "Followers",
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
                       ),
-                    )
-
-                ],
-              ),
-              SizedBox(
-                     width: 17,
-                    ),
-              Column(
-                children: [
-                  Text(
-                    "10",
-                    style: TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text(
-                      "Following",
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
+                      SizedBox(
+                        height: 5,
                       ),
-                    )
-
-                ],
-              ),
+                      Text(
+                        "Posts",
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      )
               
-                ],
+                  ],
+                ),
+                SizedBox(
+                       width: 17,
+                      ),
+                Column(
+                  children: [
+                    Text(
+                      "50",
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text(
+                        "Followers",
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      )
+              
+                  ],
+                ),
+                SizedBox(
+                       width: 17,
+                      ),
+                Column(
+                  children: [
+                    Text(
+                      "10",
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text(
+                        "Following",
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      )
+              
+                  ],
+                ),
+                
+                  ],
+                ),
               )
            
            
