@@ -37,6 +37,32 @@ class _ProfileState extends State<Profile> {
                           ),
                         ),
                       ),
+              
+              Column(
+                children: [
+                  Text(
+                    "1",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    ),
+
+                    SizedBox(
+                      height: 5,
+                    ),
+
+                    Text(
+                      "Posts",
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    )
+
+                ],
+              )
+           
             ],
           )
       ]),
