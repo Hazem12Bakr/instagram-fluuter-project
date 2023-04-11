@@ -37,7 +37,9 @@ class _ProfileState extends State<Profile> {
                           ),
                         ),
                       ),           
-              Column(
+              Row(
+                children: [
+                  Column(
                 children: [
                   Text(
                     "1",
@@ -97,7 +99,7 @@ class _ProfileState extends State<Profile> {
                     ),
                     ),
                     SizedBox(
-                      width: 17,
+                      height: 5,
                     ),
                     Text(
                       "Following",
@@ -110,6 +112,10 @@ class _ProfileState extends State<Profile> {
                 ],
               ),
               
+                ],
+              )
+           
+           
             ],
           )
       ]),
