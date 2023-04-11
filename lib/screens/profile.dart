@@ -1,6 +1,7 @@
 // ignore_for_file: unused_import, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:instagram_project/shared/colors.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
@@ -14,7 +15,8 @@ class _ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-      title: Text("Profile screen"),
+        backgroundColor: mobileBackgroundColor,
+      title: Text("Hazem A.Bakr"),
       ),
     );
   }
