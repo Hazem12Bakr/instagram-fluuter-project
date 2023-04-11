@@ -17,39 +17,36 @@ class _ProfileState extends State<Profile> {
       backgroundColor: mobileBackgroundColor,
       appBar: AppBar(
         backgroundColor: mobileBackgroundColor,
-      title: Text("Hazem A.Bakr"),
+        title: Text("Hazem A.Bakr"),
       ),
-
-      body: Column(
-        children: [
-          Row(
-            children: [
-              Container(
-                        margin: EdgeInsets.only(left: 22),
-                        padding: EdgeInsets.all(4),
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: Color.fromARGB(125, 78, 91, 110)
+      body: Column(children: [
+        Row(
+          children: [
+            Container(
+              margin: EdgeInsets.only(left: 22),
+              padding: EdgeInsets.all(4),
+              decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Color.fromARGB(125, 78, 91, 110)),
+              child: CircleAvatar(
+                radius: 40,
+                backgroundImage: NetworkImage(
+                  "https://picsum.photos/250?image=9",
+                ),
+              ),
+            ),
+            Expanded(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Column(
+                    children: [
+                      Text(
+                        "1",
+                        style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
                         ),
-                        child: CircleAvatar(
-                          radius: 40,
-                          backgroundImage: NetworkImage(
-                            "https://picsum.photos/250?image=9",
-                          ),
-                        ),
-                      ),           
-              Expanded(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Column(
-                  children: [
-                    Text(
-                      "1",
-                      style: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                      ),
                       ),
                       SizedBox(
                         height: 5,
@@ -61,20 +58,19 @@ class _ProfileState extends State<Profile> {
                           fontWeight: FontWeight.bold,
                         ),
                       )
-              
-                  ],
-                ),
-                SizedBox(
-                       width: 17,
-                      ),
-                Column(
-                  children: [
-                    Text(
-                      "50",
-                      style: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    width: 17,
+                  ),
+                  Column(
+                    children: [
+                      Text(
+                        "50",
+                        style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                       SizedBox(
                         height: 5,
@@ -86,20 +82,19 @@ class _ProfileState extends State<Profile> {
                           fontWeight: FontWeight.bold,
                         ),
                       )
-              
-                  ],
-                ),
-                SizedBox(
-                       width: 17,
-                      ),
-                Column(
-                  children: [
-                    Text(
-                      "10",
-                      style: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    width: 17,
+                  ),
+                  Column(
+                    children: [
+                      Text(
+                        "10",
+                        style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                       SizedBox(
                         height: 5,
@@ -111,34 +106,90 @@ class _ProfileState extends State<Profile> {
                           fontWeight: FontWeight.bold,
                         ),
                       )
-              
-                  ],
-                ),
-                
-                  ],
-                ),
-              )
-           
-           
-            ],
-          ),
-     
+                    ],
+                  ),
+                ],
+              ),
+            )
+          ],
+        ),
         Container(
-          margin: EdgeInsets.fromLTRB(15, 21, 0, 0),
-          width: double.infinity,
-          child: Text("Programmer")),
-    
-      
-      SizedBox(height: 15,),
-       Divider(
-        color: Colors.white,
-        thickness: 0.44,
-       )
-    
+            margin: EdgeInsets.fromLTRB(15, 21, 0, 0),
+            width: double.infinity,
+            child: Text("Programmer")),
+        SizedBox(
+          height: 15,
+        ),
+        Divider(
+          color: Colors.white,
+          thickness: 0.44,
+        ),
+        Row(
+          children: [
+            ElevatedButton.icon(
+              onPressed: () {},
+              icon: Icon(
+                Icons.edit_location,
+                color: Colors.grey,
+                size: 24.0,
+              ),
+              label: Text(
+                "Edit Profile",
+                style: TextStyle(fontSize: 17),
+              ),
+              style: ButtonStyle(
+                backgroundColor:
+                    MaterialStateProperty.all(Color.fromARGB(0, 90, 103, 223)),
+                padding: MaterialStateProperty.all(
+                    EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
+                shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(7),
+                  side: BorderSide(
+                    color: Color.fromARGB(
+                      109,
+                      255,
+                      255,
+                      255,
+                    ),
+                    style: BorderStyle.solid,
+                  ),
+                )),
+              ),
+            ),
+           
+            ElevatedButton.icon(
+              onPressed: () {},
+              icon: Icon(
+                Icons.logout,
+                color: Colors.grey,
+                size: 24.0,
+              ),
+              label: Text(
+                "Log Out",
+                style: TextStyle(fontSize: 17),
+              ),
+              style: ButtonStyle(
+                backgroundColor:
+                    MaterialStateProperty.all(Color.fromARGB(0, 90, 103, 223)),
+                padding: MaterialStateProperty.all(
+                    EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
+                shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(7),
+                  side: BorderSide(
+                    color: Color.fromARGB(
+                      109,
+                      255,
+                      255,
+                      255,
+                    ),
+                    style: BorderStyle.solid,
+                  ),
+                )),
+              ),
+            ),
+          ],
+        )
       ]),
-
-     
-
     );
   }
 }
