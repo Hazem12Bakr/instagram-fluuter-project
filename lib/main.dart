@@ -19,11 +19,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: Login(),
-      // home: Responsive(
-      //   mymobilescreen: MobileScreen(),
-      //   mywebscreen: WebScreen(),
-      // ),
+      //home: Login(),
+      home: Responsive(
+        mymobilescreen: MobileScreen(),
+        mywebscreen: WebScreen(),
+      ),
     );
   }
 }
