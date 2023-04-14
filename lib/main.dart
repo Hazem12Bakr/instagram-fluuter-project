@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:instagram_project/responsive/mobile.dart';
 import 'package:instagram_project/responsive/responsive.dart';
 import 'package:instagram_project/responsive/web.dart';
+import 'package:instagram_project/screens/Login.dart';
 import 'package:instagram_project/screens/register.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: Register(),
+      home: Login(),
       // home: Responsive(
       //   mymobilescreen: MobileScreen(),
       //   mywebscreen: WebScreen(),

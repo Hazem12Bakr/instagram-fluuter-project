@@ -383,10 +383,10 @@ class _RegisterState extends State<Register> {
                           style: TextStyle(fontSize: 18)),
                       TextButton(
                           onPressed: () {
-                            // Navigator.pushReplacement(
-                            //   context,
-                            //   MaterialPageRoute(builder: (context) => Login()),
-                          //  );
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(builder: (context) => Login()),
+                           );
                           },
                           child: Text('sign in',
                               style: TextStyle(
