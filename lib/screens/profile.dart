@@ -157,6 +157,10 @@ class _ProfileState extends State<Profile> {
               ),
             ),
            
+           SizedBox(
+          width: 15,
+        ),
+
             ElevatedButton.icon(
               onPressed: () {},
               icon: Icon(
@@ -170,7 +174,7 @@ class _ProfileState extends State<Profile> {
               ),
               style: ButtonStyle(
                 backgroundColor:
-                    MaterialStateProperty.all(Color.fromARGB(0, 90, 103, 223)),
+                    MaterialStateProperty.all(Color.fromARGB(143, 255, 55, 112)),
                 padding: MaterialStateProperty.all(
                     EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
                 shape: MaterialStateProperty.all(RoundedRectangleBorder(
