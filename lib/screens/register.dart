@@ -1,5 +1,5 @@
 
-// ignore_for_file: prefer_const_constructors, sort_child_properties_last
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last, unused_import, unnecessary_import, unused_local_variable
 
 import 'dart:math';
 import 'dart:ui';
@@ -218,6 +218,8 @@ class _RegisterState extends State<Register> {
 
   @override
   Widget build(BuildContext context) {
+    final double widthScreen = MediaQuery.of(context).size.width;
+    final double width = widthScreen/4;
     return Scaffold(
       backgroundColor: mobileBackgroundColor,
       appBar: AppBar(
@@ -227,7 +229,7 @@ class _RegisterState extends State<Register> {
       ),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.all(33.0),
+          padding:widthScreen>600?EdgeInsets.symmetric(horizontal: width): const EdgeInsets.all(33.0),
           child: SingleChildScrollView(
             child: Form(
               key: _formKey,
