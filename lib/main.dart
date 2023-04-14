@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:instagram_project/responsive/mobile.dart';
 import 'package:instagram_project/responsive/responsive.dart';
 import 'package:instagram_project/responsive/web.dart';
+import 'package:instagram_project/screens/register.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,10 +18,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: Responsive(
-        mymobilescreen: MobileScreen(),
-        mywebscreen: WebScreen(),
-      ),
+      home: Register(),
+      // home: Responsive(
+      //   mymobilescreen: MobileScreen(),
+      //   mywebscreen: WebScreen(),
+      // ),
     );
   }
 }

@@ -248,7 +248,7 @@ class _RegisterState extends State<Register> {
                                 radius: 71,
                                 // backgroundImage: AssetImage("assets/img/avatar.png"),
                                 backgroundImage:
-                                    AssetImage("assets/img/avatar.png"),
+                                    AssetImage("assets/img/avatar.png.png"),
                               )
                             : ClipOval(
                                 child: Image.file(
@@ -383,10 +383,10 @@ class _RegisterState extends State<Register> {
                           style: TextStyle(fontSize: 18)),
                       TextButton(
                           onPressed: () {
-                            Navigator.pushReplacement(
-                              context,
-                              MaterialPageRoute(builder: (context) => Login()),
-                            );
+                            // Navigator.pushReplacement(
+                            //   context,
+                            //   MaterialPageRoute(builder: (context) => Login()),
+                          //  );
                           },
                           child: Text('sign in',
                               style: TextStyle(
