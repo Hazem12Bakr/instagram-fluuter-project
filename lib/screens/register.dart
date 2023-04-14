@@ -1,5 +1,5 @@
 
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last
 
 import 'dart:math';
 import 'dart:ui';
@@ -9,6 +9,8 @@ import 'package:instagram_project/shared/colors.dart';
 
 
 import 'dart:io';
+
+import 'package:instagram_project/shared/constants.dart';
 
 //import 'package:path/path.dart' show basename;
 
