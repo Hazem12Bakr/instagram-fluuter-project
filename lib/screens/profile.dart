@@ -124,7 +124,13 @@ class _ProfileState extends State<Profile> {
           color: Colors.white,
           thickness: 0.44,
         ),
+       
+       SizedBox(
+        height: 9,
+       ),
+      
         Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton.icon(
               onPressed: () {},
