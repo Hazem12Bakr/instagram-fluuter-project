@@ -53,6 +53,7 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     final double widthScreen = MediaQuery.of(context).size.width;
     // final googleSignInProvider = Provider.of<GoogleSignInProvider>(context);
+   final double width = widthScreen/4;
     return Scaffold(
       backgroundColor: mobileBackgroundColor,
         appBar: AppBar(
@@ -62,9 +63,7 @@ class _LoginState extends State<Login> {
      
         body: Center(
             child: Padding(
-             padding: widthScreen > 600
-              ? EdgeInsets.symmetric(horizontal: widthScreen * .3)
-              : const EdgeInsets.all(33.0),
+            padding:widthScreen>600?EdgeInsets.symmetric(horizontal: width): const EdgeInsets.all(33.0),
           child: SingleChildScrollView(
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
