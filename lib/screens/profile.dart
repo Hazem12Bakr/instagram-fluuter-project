@@ -207,6 +207,24 @@ class _ProfileState extends State<Profile> {
           color: Colors.white,
           thickness: 0.44,
         ),
+     Expanded(
+       child: GridView.builder(
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+       crossAxisCount: 2,
+       childAspectRatio: 3 / 2,
+       crossAxisSpacing: 10,
+       mainAxisSpacing: 33),
+      itemCount: 3,
+      itemBuilder: (BuildContext context, int index) {
+         return Container(
+        height: 100,
+        width: 100,
+        color: Colors.amber,
+       );
+      }),
+     ),
+     
+     
       ]),
     );
   }
