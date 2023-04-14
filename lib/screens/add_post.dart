@@ -15,6 +15,15 @@ class _AddPostState extends State<AddPost> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: mobileBackgroundColor,
+      body:Center(
+        child: IconButton(
+          onPressed: (){},
+          icon: Icon(
+            Icons.upload,
+            size: 55,
+            ),
+          ),
+      ) ,
     );
   }
 }
