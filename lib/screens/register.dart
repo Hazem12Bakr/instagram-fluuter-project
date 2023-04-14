@@ -248,7 +248,7 @@ class _RegisterState extends State<Register> {
                                 radius: 71,
                                 // backgroundImage: AssetImage("assets/img/avatar.png"),
                                 backgroundImage:
-                                    AssetImage("assets/img/avatar.png.png"),
+                                    AssetImage("assets/img/avatar.png"),
                               )
                             : ClipOval(
                                 child: Image.file(
