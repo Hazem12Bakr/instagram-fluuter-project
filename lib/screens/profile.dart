@@ -13,6 +13,7 @@ class Profile extends StatefulWidget {
 class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
+    final double widthScreen = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: mobileBackgroundColor,
       appBar: AppBar(
@@ -122,7 +123,7 @@ class _ProfileState extends State<Profile> {
         ),
         Divider(
           color: Colors.white,
-          thickness: 0.44,
+          thickness:widthScreen>600? 0.35 : 0.44,
         ),
         SizedBox(
           height: 9,
