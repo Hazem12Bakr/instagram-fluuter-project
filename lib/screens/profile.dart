@@ -123,7 +123,7 @@ class _ProfileState extends State<Profile> {
         ),
         Divider(
           color: Colors.white,
-          thickness:widthScreen>600? 0.35 : 0.44,
+          thickness:widthScreen>600? 0.06 : 0.44,
         ),
         SizedBox(
           height: 9,
@@ -146,7 +146,7 @@ class _ProfileState extends State<Profile> {
                 backgroundColor:
                     MaterialStateProperty.all(Color.fromARGB(0, 90, 103, 223)),
                 padding: MaterialStateProperty.all(
-                    EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
+                    EdgeInsets.symmetric(vertical:widthScreen>600?19: 10, horizontal: 33)),
                 shape: MaterialStateProperty.all(RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(7),
                   side: BorderSide(
@@ -179,7 +179,7 @@ class _ProfileState extends State<Profile> {
                 backgroundColor: MaterialStateProperty.all(
                     Color.fromARGB(143, 255, 55, 112)),
                 padding: MaterialStateProperty.all(
-                    EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
+                    EdgeInsets.symmetric(vertical:widthScreen>600?19:  10, horizontal: 33)),
                 shape: MaterialStateProperty.all(RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(7),
                   side: BorderSide(
